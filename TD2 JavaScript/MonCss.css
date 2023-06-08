@@ -1,0 +1,62 @@
+  .bordure-bleu {
+    border: 2px solid blue;
+  }
+  
+  .bordure-verte {
+    border: 2px solid green;
+  }
+  
+  .bordure-orange {
+    border: 2px solid orange;
+  }
+  
+  .bordure-rouge {
+    border: 2px solid red;
+  }
+/* Styles pour les onglets */
+.tabs {
+  overflow: hidden;
+}
+
+.tablink {
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 50%;
+  float: left;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tablink.active {
+  background-color: #ccc;
+}
+
+/* Styles pour le tableau historique */
+#historique-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#historique-table th,
+#historique-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#historique-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#historique-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

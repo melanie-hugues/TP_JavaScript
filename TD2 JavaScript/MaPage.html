@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ma page HTML</title>
+  <link rel="stylesheet" href="MonCss.css"/>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tablink" onclick="openTab(event, 'current-data')">Données actuelles</button>
+    <button class="tablink" onclick="openTab(event, 'historique')">Historique</button>
+  </div>
+  
+  <div id="current-data" class="tabcontent">
+    <section id="georges">
+      <h1>Bravo, voici les températures</h1>
+      <div id="value-container" aria-live="polite"></div>
+
+      <p>Les températures sont présentées comme ceci : 
+          <span class="bordure-bleu">-10°C à 0°C</span>, 
+          <span class="bordure-verte">0°C à 20°C</span>, 
+          <span class="bordure-orange">20°C à 30°C</span>, 
+          <span class="bordure-rouge">30°C à 40°C</span>.
+      </p>
+    </section>
+  </div>
+
+  <div id="historique" class="tabcontent">
+    <h1>Historique des températures</h1>
+    <table id="historique-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Température</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="MonJavaScript.js"></script>
+</body>
+</html>
